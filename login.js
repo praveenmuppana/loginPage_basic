@@ -1,13 +1,11 @@
 document.getElementById("loginForm").addEventListener("submit", function(event){
-    event.preventDefault(); // Prevent form submission
+    event.preventDefault();
 
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 
     if(validateInput(username, password)) {
-        // Hide the login section
         document.getElementById("loginSection").style.display = "none";
-        // Show the success section
         document.getElementById("successSection").style.display = "block";
     }
 });
